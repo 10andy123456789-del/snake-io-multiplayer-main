@@ -28,7 +28,7 @@ const game = new Game();
 let skinSelector: SkinSelector | null = null;
 
 // Server URL - use environment variable or default
-const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3001';
+const serverUrl = import.meta.env.VITE_SERVER_URL || window.location.origin;
 
 // Check if mobile
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);

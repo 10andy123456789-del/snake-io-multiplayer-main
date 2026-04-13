@@ -3,7 +3,9 @@ import { VitePWA } from 'vite-plugin-pwa';
 import path from 'path';
 
 export default defineConfig({
-  base: '/snake-io-multiplayer/',
+  base: '/',  // 👈 把原本的 '/snake-io-multiplayer/' 改成這樣
+  
+// ... 下面都不用動
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',

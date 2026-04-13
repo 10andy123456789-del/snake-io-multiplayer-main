@@ -72,7 +72,7 @@ async function startGame() {
   menuScreen.classList.add('hidden');
   
   try {
-    await game.connect(SERVER_Url)
+    await game.connect(serverUrl);
     game.joinGame(playerName, skin);
     
     // Hide loading, show HUD

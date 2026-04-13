@@ -202,7 +202,7 @@ export const GAME_CONFIG = {
   LEADERBOARD_SIZE: 10,
   
   // Bots
-  BOT_COUNT: 4, // Reduced from 8
+  BOT_COUNT: 1, // Reduced from 8
   BOT_RESPAWN_DELAY: 3000, // 3 seconds after death
   BOT_DECISION_INTERVAL: 100, // ms between AI decisions
 } as const;

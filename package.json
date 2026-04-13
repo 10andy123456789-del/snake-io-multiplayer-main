@@ -2,9 +2,9 @@
   "name": "snake-io-multiplayer-root",
   "version": "1.0.0",
   "scripts": {
-    "start": "cd server && npm install --include=dev && npx tsx src/index.ts",
-    "build": "echo 'Building...'",
-    "postinstall": "cd server && npm install"
+    "build": "cd client && npm install && npm run build",
+    "postinstall": "cd server && npm install",
+    "start": "cd server && npx tsx src/index.ts"
   },
   "engines": {
     "node": ">=18.0.0"

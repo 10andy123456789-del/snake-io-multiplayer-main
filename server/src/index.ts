@@ -33,7 +33,7 @@ app.get('/health', (_req, res) => {
 });
 
 // 2. 告訴伺服器：遊戲畫面的資料夾在哪裡 (通常打包後會在 client/dist)
-const clientPath = path.join(process.cwd(), 'client/dist');
+const clientPath = path.join(process.cwd(), '../client/dist');
 app.use(express.static(clientPath));
 
 // 3. 任何人來到這個網站，只要找不到網址，就一律發放遊戲畫面 (index.html) 給他！
